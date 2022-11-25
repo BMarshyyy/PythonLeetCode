@@ -8,6 +8,6 @@ def romanToInt(text):
 
       for key in reduction_dict:
           if key in text:
-              value += redution_dict[key]
+              value -= reduction_dict[key]
 
       return(value)
