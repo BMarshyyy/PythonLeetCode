@@ -1,0 +1,9 @@
+def twoSum(nums, target):
+    values_dict = {}
+    for index, value in enumerate(nums):
+        if target - value in values_dict:
+            return [values_dict[target - value], index]
+        else:
+            values_dict[value] = index
+
+print(twoSum([1, 2, 3, 4, 5], 6))
